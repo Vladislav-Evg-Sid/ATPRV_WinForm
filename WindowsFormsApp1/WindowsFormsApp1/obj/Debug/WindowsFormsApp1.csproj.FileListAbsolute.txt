@@ -1,0 +1,10 @@
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

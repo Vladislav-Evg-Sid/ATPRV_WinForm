@@ -67,12 +67,100 @@ namespace WindowsFormsApp1
                 }
             }
             dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Clear();
             dataGridView1.DataSource = table;
         }
 
         private void Ex1_ButtonClick(object sender, EventArgs e)
         {
             EX1();
+        }
+
+        private CancellationTokenSource cancellationTokenSource;
+        private bool finished = false;
+
+        private async void startButton_Click(object sender, EventArgs e)
+        {
+            string url = urlTextBox.Text;
+            int depth;
+            string path = pathTextBox.Text;
+
+            if (!int.TryParse(depthTextBox.Text, out depth))
+            {
+                MessageBox.Show("Пожалуйста, введите корректное значение глубины.");
+                return;
+            }
+
+            startButton.Enabled = false;
+            finished = false; // Сбрасываем состояние завершения перед началом
+
+            // Инициализируем CancellationTokenSource
+            cancellationTokenSource = new CancellationTokenSource();
+            var token = cancellationTokenSource.Token;
+
+            try
+            {
+                Task loadingTask = Task.Run(() => StartLoading(token));
+                Crawler crawler = new Crawler(url, depth);
+                Task crawlingTask = crawler.Crawl();
+
+                // Ожидаем завершения задачи Crawl
+                await crawlingTask;
+
+                Console.WriteLine("Ending Crawling...");
+
+                crawler.SaveToJson(path);
+
+                Console.WriteLine("Ending saving...");
+
+                // Устанавливаем флаг завершения и отменяем загрузку
+                finished = true;
+                cancellationTokenSource.Cancel();
+
+                // Ожидаем завершения загрузки
+                await loadingTask;
+            }
+            catch (OperationCanceledException)
+            {
+                MessageBox.Show("Загрузка была отменена.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла ошибка: {ex.Message}");
+            }
+            finally
+            {
+                startButton.Enabled = true;
+                loadingLabel.Text = String.Empty; // Сброс текста лейбла после завершения
+            }
+        }
+
+        private void StartLoading(CancellationToken token)
+        {
+            loadingLabel.AutoSize = false;
+            loadingLabel.Size = new System.Drawing.Size(200, 50);
+
+            int counter = 0;
+            string loadingString = "Загрузка";
+
+            while (!token.IsCancellationRequested) // Проверяем на запрос отмены
+            {
+                this.loadingLabel.Text = loadingString;
+
+                Thread.Sleep(1000); // Имитация работы
+
+                if (counter == 3)
+                {
+                    loadingString = "Загрузка";
+                    counter = 0;
+                }
+
+                loadingString += ".";
+                counter++;
+            }
+
+            // Сброс текста лейбла при завершении
+            loadingLabel.Text = String.Empty;
         }
     }
 }

@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Collections;
+using System.Diagnostics;
+using System.Data.SqlTypes;
 
 namespace WindowsFormsApp1
 {
@@ -30,11 +33,12 @@ namespace WindowsFormsApp1
             DataTable table = new DataTable();
             table.Columns.Add("Слово");
             table.Columns.Add("Количество вхождений");
-            foreach (var word in words)
+            for (int i=0; i<words.Length; i++)
             {
-                table.Rows.Add(word, 0);
+                table.Rows.Add(words[i], 0);
+                words[i] = words[i];
             }
-            string filePath = "E:\\documents\\ВУЗ\\семестр 5\\АТПРВ (распределённые)\\6\\ConsoleApp4\\";
+            string filePath = "Путь к файлам с записями"; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ВПИШИ СВОЁ
             var ready = new SemaphoreSlim(1);
             Task[] reader = new Task[10];
             for (int i = 0; i < 10; i++)
@@ -48,12 +52,19 @@ namespace WindowsFormsApp1
                         string[] lines = File.ReadLines(filePath + (id + 1) + ".txt").AsParallel().ToArray();
 
                         // Вывод обработанных строк
-                        for (int l = 0; l < lines.Length; l++)
+                        //Parallel.For(0, lines.Length, async (l) =>
+                        for (int l=0; l<lines.Length; l++)
                         {
                             string line = lines[l];
                             for (int w = 0; w < words.Length; w++)
                             {
-                                int cnt = line.IndexOf(words[w]);
+                                int index = 0;
+                                int cnt = 0;
+                                while ((index = line.IndexOf(words[w], index)) != -1)
+                                {
+                                    cnt++;
+                                    index += words[w].Length; // Перемещаемся на длину подстроки вперед
+                                }
                                 if (cnt > 0)
                                 {
                                     await ready.WaitAsync();
@@ -61,19 +72,20 @@ namespace WindowsFormsApp1
                                     ready.Release();
                                 }
                             }
-                                Console.WriteLine(line);
+                            Console.WriteLine(line);
                         }
                     });
                 }
             }
-            dataGridView1.Columns.Clear();
             dataGridView1.Columns.Clear();
             dataGridView1.DataSource = table;
         }
 
         private void Ex1_ButtonClick(object sender, EventArgs e)
         {
+            this.button1.Enabled = false;
             EX1();
+            this.button1.Enabled = true;
         }
 
         private CancellationTokenSource cancellationTokenSource;
@@ -138,15 +150,12 @@ namespace WindowsFormsApp1
         private void StartLoading(CancellationToken token)
         {
             loadingLabel.AutoSize = false;
-            loadingLabel.Size = new System.Drawing.Size(200, 50);
 
             int counter = 0;
             string loadingString = "Загрузка";
 
             while (!token.IsCancellationRequested) // Проверяем на запрос отмены
             {
-                this.loadingLabel.Text = loadingString;
-
                 Thread.Sleep(1000); // Имитация работы
 
                 if (counter == 3)
@@ -158,9 +167,82 @@ namespace WindowsFormsApp1
                 loadingString += ".";
                 counter++;
             }
+        }
 
-            // Сброс текста лейбла при завершении
-            loadingLabel.Text = String.Empty;
+        private void button2_Click(object sender, EventArgs e)
+        {
+            List<Class1.Employee> employees = Class1.Generate(1000);
+
+            var firstEmployees = employees.Take(100).ToList();
+
+            dataGridView2.DataSource = firstEmployees.Select(em => new
+            {
+                em.Name,
+                OrdersCount = em.Orders.Count()
+
+            }).ToList();
+
+            var firstOrders = employees.SelectMany(em => em.Orders).Take(500).ToList();
+
+            dataGridView3.DataSource = firstOrders;
+
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            var filteredOrdersPlinq = employees
+                                    .AsParallel()
+                                    .Where(em => em.Name.Contains("Fillton") || em.Name.StartsWith("A"))
+                                    .SelectMany(em => em.Orders)
+                                    .ToList();
+            sw.Stop();
+            long mils1 = sw.ElapsedMilliseconds;
+            label5.Text = mils1.ToString();
+            sw.Restart();
+
+            dataGridView4.DataSource = filteredOrdersPlinq.Select(o => new
+            {
+                o.Date,
+                o.Summ
+            }).ToList();
+
+            DateTime filterDate = new DateTime(2024, 1, 1);
+
+            sw.Start();
+
+            var ordersBeforeDatePlinq = employees
+                                        .AsParallel()
+                                        .SelectMany(em => em.Orders)
+                                        .Where(o => o.Date < filterDate)
+                                        .ToList();
+
+            sw.Stop();
+            long mils2 = sw.ElapsedMilliseconds;
+            label6.Text = mils2.ToString();
+            sw.Restart();
+
+            dataGridView4.DataSource = ordersBeforeDatePlinq.Select(o => new
+            {
+                o.Date,
+                o.Summ
+            }).ToList();
+
+            sw.Start();
+
+            var employeesSortedByAveragePlinq = employees
+                                            .AsParallel()
+                                            .Select(em => new
+                                            {
+                                                em.Name,
+                                                AverageOrderSum = em.Orders.Average(o => o.Summ)
+                                            })
+                                            .OrderByDescending(em => em.AverageOrderSum)
+                                            .ToList();
+
+            sw.Stop();
+            long mils3 = sw.ElapsedMilliseconds;
+            label7.Text = mils3.ToString();
+            sw.Restart();
+
+            dataGridView4.DataSource = employeesSortedByAveragePlinq;
         }
     }
 }

@@ -8,37 +8,41 @@ E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\Wind
 E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\documents\ВУЗ\семестр 5\ТРБД (БД)\11-12\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\HtmlAgilityPack.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.IO.Pipelines.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Text.Json.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.ValueTuple.dll
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\HtmlAgilityPack.pdb
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\HtmlAgilityPack.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.IO.Pipelines.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Text.Encodings.Web.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Text.Json.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.ValueTuple.xml
-C:\Users\user\source\repos\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\HtmlAgilityPack.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.IO.Pipelines.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Text.Encodings.Web.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Text.Json.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.ValueTuple.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\HtmlAgilityPack.pdb
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\HtmlAgilityPack.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.IO.Pipelines.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Text.Encodings.Web.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Text.Json.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.ValueTuple.xml
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Faker.Net.4.7.dll
+E:\documents\ВУЗ\семестр 5\АТПРВ (распределённые)\7\ATPRV_WinForm\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de-DE\Faker.Net.4.7.resources.dll
